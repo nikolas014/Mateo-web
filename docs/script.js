@@ -1,10 +1,8 @@
 let elemento = document.getElementById("elemento")
 let cantidadY = 0
 let cantidadX = 0
+let imagen = document.getElementById("imagen_movimiento")
 window.addEventListener("keydown", (e)=>{
-    // console.log(e.key)
-    // let teclas = e.key
-    // console.log(teclas+" = "+teclas)
     let movimiento = 50;
     switch (e.key) {
         case "ArrowUp":
@@ -20,15 +18,17 @@ window.addEventListener("keydown", (e)=>{
         case "ArrowLeft":
             console.log("izquierda")
             cantidadX-=movimiento
+            imagen.src = "cerdo_LEFT.png"
             elemento.style.transform=`translate(${cantidadX}px, ${cantidadY}px)`
             break;
         case "ArrowRight":
-            cantidadX+=movimiento
-            elemento.style.transform=`translate(${cantidadX}px, ${cantidadY}px)`
             console.log("derecha")
+            cantidadX+=movimiento
+            imagen.src = "cerdo_RIGHT.png"
+            elemento.style.transform=`translate(${cantidadX}px, ${cantidadY}px)`
             break;
         default:
             break;
-           
     }console.log(cantidad);
 })
+
