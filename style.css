@@ -1,0 +1,24 @@
+.titulo-h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #ff0000;
+}
+.imagen-1{
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+.elemento {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%;
+    background-color: #787878; */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+}
