@@ -6,7 +6,7 @@ let imagen = document.getElementById("imagen_movimiento")
 // Funcion para mover el personaje
 window.addEventListener("keydown", (e)=>{
     console.log(e.key);
-    let movimiento = 3.125;
+    let movimiento = Math.random() * (3.125 - 0) + 0
     switch (e.key) {
         case "ArrowUp":
             console.log("arriba")
